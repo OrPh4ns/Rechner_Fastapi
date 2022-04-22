@@ -6,7 +6,26 @@
 </head>
 <body>
 
-{{id}}
-{{msg}}
+
+<form method="post" action="/rechnen">
+    <input type="text" id="n1" name="n1"><br><br>
+    <input type="text" id="n2" name="n2"><br><br>
+
+    <!-- Das ist extra von mir damit man auswählt welche Operation ausgeführt werden muss -->
+    <select name="operator" id="operator">
+        <option value="+">+</option>
+        <option value="-">-</option>
+        <option value="*">*</option>
+        <option value="/">/</option>
+    </select>
+    <!-- Hier endet der extra option Knupf  -->
+
+    <button>Rechnen</button>
+</form>
+
+{{erg}}
+
+
+
 </body>
 </html>
